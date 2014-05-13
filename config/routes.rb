@@ -1,7 +1,11 @@
 Finalquiz::Application.routes.draw do
+  resources :pizzas 
+
   resources :microposts
 
   resources :users
+
+  root 'pages#home'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
